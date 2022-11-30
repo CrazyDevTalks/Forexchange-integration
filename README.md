@@ -5,3 +5,5 @@
 ## Description
 
 4X is a web application for researching foreign currency rates.
+
+The live demo can be found [here](https://4x-exchange.vercel.app/).
