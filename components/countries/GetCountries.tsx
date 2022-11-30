@@ -359,9 +359,8 @@ const GetCountries = () => {
             <FormFooter>
               <InformationCircleIcon className="h-8 w-8 mr-2" />
               <p>
-                This is an informational tool only and is not intended to for a
-                real world scenario. You should not rely on this tool for a real
-                world forex rate. money.
+                This is an informational tool only. You should not rely on this
+                tool for a real world forex rate.
               </p>
             </FormFooter>
           </InsideContainer>
