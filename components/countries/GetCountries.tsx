@@ -63,7 +63,6 @@ const GetCountries = () => {
     if (res.ok) {
       const name = data[0].name;
       const currency = data[0].currencies[0].code;
-      console.log(`country: ${name} code: ${currency}`);
       setOriginName(name);
       setOriginCode(currency);
     } else {
@@ -80,7 +79,6 @@ const GetCountries = () => {
     if (res.ok) {
       const name = data[0].name;
       const currency = data[0].currencies[0].code;
-      console.log(`country: ${name} code: ${currency}`);
       setDestinationName(name);
       setDestinationCode(currency);
     } else {
@@ -101,7 +99,6 @@ const GetCountries = () => {
     const data = await res.json();
 
     if (res.ok) {
-      console.log(data);
       const rate = data.conversion_rate;
       const result = data.conversion_result;
       const base = data.base_code;
@@ -111,8 +108,6 @@ const GetCountries = () => {
       setConversionResult(result);
       setBaseCode(base);
       setTargetCode(target);
-
-      console.log({ rate, result, base, target });
     } else {
       setError(data.message);
       setError(null);
